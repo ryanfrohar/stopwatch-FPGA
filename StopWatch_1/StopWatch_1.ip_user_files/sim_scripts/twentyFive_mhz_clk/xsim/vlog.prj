@@ -1,0 +1,6 @@
+verilog xil_defaultlib "../../../../StopWatch_1.srcs/sources_1/ip/twentyFive_mhz_clk/twentyFive_mhz_clk_clk_wiz.v" --include "../../../ipstatic"
+verilog xil_defaultlib "../../../../StopWatch_1.srcs/sources_1/ip/twentyFive_mhz_clk/twentyFive_mhz_clk.v" --include "../../../ipstatic"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

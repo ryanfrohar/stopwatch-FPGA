@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Mar 28 18:55:13 2019
+# Process ID: 10500
+# Current directory: C:/Users/Gabriel Elkadiki/Desktop/StopWatch/StopWatch_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13192 C:\Users\Gabriel Elkadiki\Desktop\StopWatch\StopWatch_1\StopWatch_1.xpr
+# Log file: C:/Users/Gabriel Elkadiki/Desktop/StopWatch/StopWatch_1/vivado.log
+# Journal file: C:/Users/Gabriel Elkadiki/Desktop/StopWatch/StopWatch_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gabriel Elkadiki/Desktop/StopWatch/StopWatch_1/StopWatch_1.xpr}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Gabriel Elkadiki/Desktop/StopWatch/StopWatch_1/StopWatch_1.runs/impl_1/Master_Controller.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Gabriel Elkadiki/Desktop/StopWatch/StopWatch_1/StopWatch_1.runs/impl_1/Master_Controller.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
